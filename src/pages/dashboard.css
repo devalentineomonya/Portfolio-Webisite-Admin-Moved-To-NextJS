@@ -1,0 +1,10 @@
+.dashboard-container{
+   
+}
+.dashboard-summary-cards{
+    @apply flex border-none border-t border-gray-500;
+
+}
+.summary-card{
+    @apply w-[250px] aspect-video
+}

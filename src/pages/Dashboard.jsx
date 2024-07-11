@@ -1,14 +1,21 @@
-import Card from 'antd/es/card/Card'
-import React from 'react'
+import Card from "antd/es/card/Card";
+import React from "react";
+import "./dashboard.css";
 
 const Dashboard = () => {
   return (
-  <div>
-    <div>
-      <Card/>
+    <div className="dashboard-container">
+      <Card>
+        <div className="dashboard-summary-cards">
+          <Card className="summary-card" />
+          <Card className="summary-card" />
+          <Card className="summary-card" />
+          <Card className="summary-card" />
+          <Card className="summary-card" />
+        </div>
+      </Card>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;

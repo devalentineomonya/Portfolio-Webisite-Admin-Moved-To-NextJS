@@ -5,6 +5,7 @@ import "./App.css";
 import AsideNavigation from "./components/AsideNavigation/AsideNavigation";
 import Typography from "antd/es/typography/Typography";
 import Title from "antd/es/typography/Title";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   const breadcrumbItems = [
@@ -47,7 +48,7 @@ function App() {
               className="main-content-breadcrumb"
             />
           </Header>
-          main content
+         <Dashboard/>
         </Content>
       </Layout>
     </Layout>
