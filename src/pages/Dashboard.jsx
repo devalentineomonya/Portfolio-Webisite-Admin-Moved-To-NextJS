@@ -5,13 +5,16 @@ import "./dashboard.css";
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
-      <Card>
+      <Card className="dashboard-content">
         <div className="dashboard-summary-cards">
           <Card className="summary-card" />
           <Card className="summary-card" />
           <Card className="summary-card" />
           <Card className="summary-card" />
           <Card className="summary-card" />
+        </div>
+        <div>
+          
         </div>
       </Card>
     </div>
