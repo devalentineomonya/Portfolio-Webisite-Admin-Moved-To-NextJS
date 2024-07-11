@@ -3,6 +3,8 @@ import Sider from "antd/es/layout/Sider";
 import { Content, Footer, Header } from "antd/es/layout/layout";
 import "./App.css";
 import AsideNavigation from "./components/AsideNavigation/AsideNavigation";
+import Typography from "antd/es/typography/Typography";
+import Title from "antd/es/typography/Title";
 
 function App() {
   const breadcrumbItems = [
@@ -36,10 +38,14 @@ function App() {
 
         <Content>
           <Header className="main-content-header">
-            <div className="main-content-title">
+            <Title className="main-content-title" level={3}>
               Dashboard
-            </div>
-            <Breadcrumb separator=">" items={breadcrumbItems} className="main-content-breadcrumb" />
+            </Title>
+            <Breadcrumb
+              separator=">"
+              items={breadcrumbItems}
+              className="main-content-breadcrumb"
+            />
           </Header>
           main content
         </Content>
