@@ -5,3 +5,12 @@
 .aside{
     @apply h-[calc(100vh-40px)] bg-white
 }
+.main-content-header{
+    @apply h-10 bg-white flex items-center justify-between px-2
+}
+.main-content-title{
+    @apply text-2xl text-[#2F3699] font-medium
+}
+.main-content-breadcrumb{
+    @apply text-sm font-thin text-[#00B7EF]
+}

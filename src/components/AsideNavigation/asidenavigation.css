@@ -1,0 +1,6 @@
+.aside-title{
+    @apply text-white
+}
+.aside-title-separator{
+    @apply bg-gray-50
+}
