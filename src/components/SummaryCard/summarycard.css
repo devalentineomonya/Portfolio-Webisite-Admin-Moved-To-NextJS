@@ -1,5 +1,5 @@
 .summary-card{
-    @apply w-full h-full min-h-28
+    @apply w-full h-full min-h-28;
 }
 .summary-card-content{
    

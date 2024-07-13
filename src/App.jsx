@@ -1,14 +1,14 @@
-import { Layout } from "antd";
+import "./App.css";
+import { Layout} from "antd";
 import Sider from "antd/es/layout/Sider";
 import { Content, Header } from "antd/es/layout/layout";
-import "./App.css";
 import AsideNavigation from "./components/AsideNavigation/AsideNavigation";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
 
 function App() {
   return (
-    <Layout>
+    <Layout className="main-layout">
       <Header className="header">
         <HeaderComponent />
       </Header>
