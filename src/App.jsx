@@ -4,7 +4,7 @@ import { Content, Footer, Header } from "antd/es/layout/layout";
 import "./App.css";
 import AsideNavigation from "./components/AsideNavigation/AsideNavigation";
 import Dashboard from "./pages/Dashboard";
-import HeaderComponent from "./components/Header/HeaderComponent";
+import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
 
 function App() {
   return (

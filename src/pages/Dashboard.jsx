@@ -8,14 +8,13 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <Card className="dashboard-content">
         <div className="dashboard-summary-cards">
-      <SummaryCard/>
-      <SummaryCard/>
-      <SummaryCard/>
-      <SummaryCard/>
+          <SummaryCard />
+          <SummaryCard />
+          <SummaryCard />
+          <SummaryCard />
         </div>
-        <div>
-
-        </div>
+      <Card className="recent-activities">ss</Card>
+ 
       </Card>
     </div>
   );

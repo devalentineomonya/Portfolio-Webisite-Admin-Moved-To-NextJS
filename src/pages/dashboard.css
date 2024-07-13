@@ -1,11 +1,13 @@
-.dashboard-container{
-    @apply h-[calc(100vh-5rem)] ;
-   
+.dashboard-container {
+    @apply min-h-[calc(100vh-3.0rem)] h-fit;
+
 }
-.dashboard-content{
-    @apply h-full
+
+.dashboard-content {
+    @apply h-full border-none rounded-none bg-transparent;
 }
-.dashboard-summary-cards{
-    @apply grid grid-cols-4 border-none border-t border-gray-500 gap-x-3 ;
+
+.dashboard-summary-cards {
+    @apply grid grid-cols-4 border-none border-t border-gray-500 gap-x-3 mb-4;
 
 }
