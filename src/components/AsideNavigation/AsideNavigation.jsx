@@ -8,9 +8,9 @@ const AsideNavigation = () => {
   return (
     <div>
       <Menu>
-        {menuItems?.map((menuItem, i) => (
-          <MenuItem color="#fff000" icon={menuItem.icon} title={menuItem.name} key={`${i}-${menuItem.name}` }>
-            {menuItem.name}
+        {menuItems?.map(({icon, name}, i) => (
+          <MenuItem color="#fff000" icon={icon} title={name} key={`${i}-${name}`}>
+            {name}
           </MenuItem>
         ))}
       </Menu>
