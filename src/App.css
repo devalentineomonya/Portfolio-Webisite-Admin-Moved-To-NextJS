@@ -1,10 +1,14 @@
 .header {
-    @apply h-10 bg-[#000099] flex justify-center items-center text-white font-semibold text-2xl;
+    @apply h-12 bg-white flex justify-center items-center px-5;
 }
 
 .aside{
-    @apply h-[calc(100vh-40px)] bg-white
+    @apply h-[calc(100vh-50px)] bg-white
 }
+.main-content{
+    @apply p-3 bg-gray-50
+}
+
 .main-content-header{
     @apply h-10 bg-white flex items-center justify-between px-2
 }

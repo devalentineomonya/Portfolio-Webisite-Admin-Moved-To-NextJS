@@ -1,54 +1,25 @@
-import { Breadcrumb, Button, Layout } from "antd";
+import { Breadcrumb, Button, Flex, Layout } from "antd";
 import Sider from "antd/es/layout/Sider";
 import { Content, Footer, Header } from "antd/es/layout/layout";
 import "./App.css";
 import AsideNavigation from "./components/AsideNavigation/AsideNavigation";
-import Typography from "antd/es/typography/Typography";
-import Title from "antd/es/typography/Title";
 import Dashboard from "./pages/Dashboard";
+import HeaderComponent from "./components/Header/HeaderComponent";
 
 function App() {
-  const breadcrumbItems = [
-    {
-      title: "Home",
-    },
-    {
-      title: "Application Center",
-      href: "",
-    },
-    {
-      title: "Application List",
-      href: "",
-    },
-    {
-      title: "An Application",
-    },
-  ];
   return (
     <Layout>
-      <Header className="header">header</Header>
+      <Header className="header">
+
+        <HeaderComponent />
+      </Header>
       <Layout>
-        <Sider
-          className="aside"
-          style={{
-            width: 256,
-          }}
-        >
+        <Sider width={250} theme="light" className="aside">
           <AsideNavigation />
         </Sider>
 
-        <Content>
-          <Header className="main-content-header">
-            <Title className="main-content-title" level={3}>
-              Dashboard
-            </Title>
-            <Breadcrumb
-              separator=">"
-              items={breadcrumbItems}
-              className="main-content-breadcrumb"
-            />
-          </Header>
-         <Dashboard/>
+        <Content className="main-content">
+          <Dashboard />
         </Content>
       </Layout>
     </Layout>

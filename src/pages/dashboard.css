@@ -6,9 +6,6 @@
     @apply h-full
 }
 .dashboard-summary-cards{
-    @apply flex border-none border-t border-gray-500 gap-x-3 ;
+    @apply grid grid-cols-4 border-none border-t border-gray-500 gap-x-3 ;
 
-}
-.summary-card{
-    @apply w-[250px] aspect-video
 }

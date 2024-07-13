@@ -1,0 +1,6 @@
+.header-container{
+    @apply w-full
+}
+.header-left{
+    @apply w-[230px] bg-red-400
+}
