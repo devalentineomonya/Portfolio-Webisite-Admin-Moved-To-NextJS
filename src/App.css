@@ -1,5 +1,5 @@
 .main-layout{
-    @apply max-w-[1600px]
+    @apply max-w-[1600px]  
 }
 .header {
     @apply h-12 bg-white flex justify-center items-center px-5;

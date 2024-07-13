@@ -14,7 +14,7 @@ function App() {
       </Header>
       <Layout>
         <Sider width={250} theme="light" className="aside">
-          <AsideNavigation />
+          <AsideNavigation /> 
         </Sider>
         <Content className="main-content">
           <Dashboard />
