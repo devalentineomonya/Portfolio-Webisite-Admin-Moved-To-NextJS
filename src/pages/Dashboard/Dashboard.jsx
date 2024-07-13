@@ -1,7 +1,7 @@
 import Card from "antd/es/card/Card";
 import React from "react";
 import "./dashboard.css";
-import SummaryCard from "../components/SummaryCard/SummaryCard";
+import SummaryCard from "../../components/SummaryCard/SummaryCard";
 
 const Dashboard = () => {
   return (
