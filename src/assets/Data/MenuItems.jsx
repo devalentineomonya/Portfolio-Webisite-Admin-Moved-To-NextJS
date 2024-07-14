@@ -1,46 +1,44 @@
+import { FaTachometerAlt, FaHandshake, FaCertificate, FaTools, FaLanguage, FaProjectDiagram, FaUsers, FaUser } from 'react-icons/fa';
+
 export const menuItems = [
   {
     name: "Dashboard",
     href: "/",
-    icon: "",
+    icon: <FaTachometerAlt />,
   },
   {
     name: "Collaborations",
     href: "/collaborations",
-    icon: "",
+    icon: <FaHandshake />,
   },
-
   {
     name: "Certificates",
     href: "/certificates",
-    icon: "",
+    icon: <FaCertificate />,
   },
   {
     name: "Tech Stacks",
     href: "/stacks",
-    icon: "",
+    icon: <FaTools />,
   },
-
   {
     name: "Languages",
     href: "/languages",
-    icon: "",
+    icon: <FaLanguage />,
   },
   {
     name: "Projects",
     href: "/projects",
-    icon: "",
+    icon: <FaProjectDiagram />,
   },
-
   {
     name: "Users",
     href: "/users",
-    icon: "",
+    icon: <FaUsers />,
   },
-
   {
     name: "Profile",
     href: "/profile",
-    icon: "",
+    icon: <FaUser />,
   },
 ];

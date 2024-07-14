@@ -1,16 +1,22 @@
-import { Divider, Flex } from "antd";
 import React from "react";
+import { Row, Col } from 'antd';
 import "./headercomponent.css";
 const HeaderComponent = () => {
   return (
-    <Flex className="header-container" align="stretch" gap={5}>
-      <Flex className="header-left" justify="left"  align="stretch">
-        logo
-        menu
-      </Flex>
-      <Flex>Center</Flex>
-      <Flex justify="right">Right</Flex>
-    </Flex>
+    <Row className="header-container" align="stretch" gutter={16}>
+    <Col flex="230px" className="header-left">
+      <Row justify="space-between" align="stretch">
+        <Col>logo</Col>
+        <Col>menu</Col>
+      </Row>
+    </Col>
+    <Col flex="auto" className="header-center">
+      Center
+    </Col>
+    <Col flex="150px" className="header-right" justify="end">
+      Right
+    </Col>
+  </Row>
   );
 };
 

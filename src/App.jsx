@@ -7,6 +7,8 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
 
 function App() {
+
+
   return (
     <Layout className="main-layout">
       <Header className="header">

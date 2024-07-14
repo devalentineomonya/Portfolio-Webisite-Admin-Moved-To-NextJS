@@ -1,6 +1,15 @@
-.header-container{
-    @apply w-full
-}
-.header-left{
-    @apply w-[230px] bg-red-400
-}
+.header-container {
+    @apply w-full;
+  }
+  
+  .header-left {
+    @apply bg-red-400;
+  }
+  
+  .header-center {
+    @apply flex items-center justify-center;
+  }
+  
+  .header-right {
+    @apply flex items-center justify-end;
+  }
