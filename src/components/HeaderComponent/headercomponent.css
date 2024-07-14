@@ -1,15 +1,26 @@
 .header-container {
     @apply w-full;
-  }
-  
-  .header-left {
-    @apply bg-red-400;
-  }
-  
-  .header-center {
-    @apply flex items-center justify-center;
-  }
-  
-  .header-right {
-    @apply flex items-center justify-end;
-  }
+}
+
+
+.menu-icon {
+    @apply flex items-center justify-center
+}
+
+.header-center {
+    @apply flex items-center justify-start;
+}
+
+.header-center h3 {
+    @apply font-semibold text-xl border-b-2 border-blue-700 pb-1 ml-5;
+}
+
+.header-right {
+    @apply flex items-center justify-between;
+}
+
+div:where(.css-dev-only-do-not-override-m4timi).ant-typography,
+:where(.css-dev-only-do-not-override-m4timi).ant-typography p {
+    @apply mb-0
+}
+

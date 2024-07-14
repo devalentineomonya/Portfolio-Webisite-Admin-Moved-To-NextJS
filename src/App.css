@@ -1,22 +1,32 @@
-.main-layout{
-    @apply max-w-[1600px]  
+
+#root {
+    @apply flex justify-center
 }
+
+.main-layout {
+    @apply max-w-[1600px] border border-gray-100
+}
+
 .header {
     @apply h-12 bg-white flex justify-center items-center px-5;
 }
-.aside{
+
+.aside {
     @apply h-[calc(100vh-50px)] bg-white
 }
-.main-content{
+
+.main-content {
     @apply bg-gray-50
 }
 
-.main-content-header{
+.main-content-header {
     @apply h-10 bg-white flex items-center justify-between px-2
 }
-.main-content-title{
+
+.main-content-title {
     @apply text-2xl text-[#2F3699] font-medium
 }
-.main-content-breadcrumb{
+
+.main-content-breadcrumb {
     @apply text-sm font-thin text-[#00B7EF]
 }

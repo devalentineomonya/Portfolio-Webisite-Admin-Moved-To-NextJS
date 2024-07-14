@@ -1,7 +1,18 @@
-.summary-card{
-    @apply w-full h-full min-h-28;
+.summary-card {
+    @apply w-full h-full min-h-28 transform transition-all ease-in-out duration-300 cursor-pointer hover:-translate-y-1;
 }
-.summary-card-content{
-   
 
+.summary-card-typology {
+    @apply flex justify-end flex-col w-full text-white 
+}
+
+h4:where(.css-dev-only-do-not-override-m4timi).ant-typography, div:where(.css-dev-only-do-not-override-m4timi).ant-typography-h4, div:where(.css-dev-only-do-not-override-m4timi).ant-typography-h4 > textarea, :where(.css-dev-only-do-not-override-m4timi).ant-typography h4 {
+    @apply mb-0 text-white font-semibold text-3xl
+}
+
+.summary-card-count, .summary-card-label {
+    @apply flex justify-end font-semibold text-white text-lg
+};
+.summary-card-label{
+    @apply font-normal
 }
