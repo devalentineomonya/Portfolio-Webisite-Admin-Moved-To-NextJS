@@ -5,7 +5,7 @@ import { Content, Header } from "antd/es/layout/layout";
 import AsideNavigation from "./components/AsideNavigation/AsideNavigation";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
-
+import TableLayout from "./components/TableLayout/TableLayout"
 function App() {
 
 
@@ -19,7 +19,8 @@ function App() {
           <AsideNavigation /> 
         </Sider>
         <Content className="main-content">
-          <Dashboard />
+          {/* <Dashboard /> */}
+          <TableLayout/>
         </Content>
       </Layout>
     </Layout>
