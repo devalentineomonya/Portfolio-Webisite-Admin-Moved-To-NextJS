@@ -10,11 +10,10 @@ const AsideNavigation = () => {
     icon,
     label: <Link to={link}>{label}</Link>,
   }));
+  console.dir(items);
 
   return (
-    <div>
-      <Menu items={items} />
-    </div>
+      <Menu items={items} className="border-2 border-green-400" />
   );
 };
 

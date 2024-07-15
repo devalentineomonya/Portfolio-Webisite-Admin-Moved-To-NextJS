@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Stacks = () => {
+const Profile = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Stacks = () => {
   )
 }
 
-export default Stacks
+export default Profile

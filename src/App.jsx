@@ -19,9 +19,9 @@ function App() {
           <AsideNavigation /> 
         </Sider>
         <Content className="main-content">
-         {/* <RouterConfig/> */}
-         <AddUserForm/>
+         <RouterConfig/>
         </Content>
+        
       </Layout>
     </Layout>
   );

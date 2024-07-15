@@ -8,11 +8,11 @@
 }
 
 .header {
-    @apply h-12 bg-white flex justify-center items-center px-5  border-b-2 border-gray-200 ;
+    @apply h-12 bg-white flex justify-center items-center px-5  border-b-2 border-gray-100 ;
 }
 
 .aside {
-    @apply h-[calc(100vh-50px)] bg-white
+    @apply h-[calc(100vh-50px)] bg-white border-r-2 border-r-gray-100
 }
 
 .main-content {

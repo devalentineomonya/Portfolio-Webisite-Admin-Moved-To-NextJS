@@ -1,30 +1,33 @@
 // src/router.jsx
 import React from 'react';
 import {Routes, Route } from 'react-router-dom';
-// import Collaborations from './components/Collaborations';
-// import Certificates from './components/Certificates';
-// import TechStacks from './components/TechStacks';
-// import Languages from './components/Languages';
-// import Projects from './components/Projects';
-// import Users from './components/Users';
-// import Profile from './components/Profile';
+
 import Dashboard from "./pages/Dashboard/Dashboard"
 import { menuItems } from './assets/Data/MenuItems';
+import Collaborations from './pages/Collaborations/Collaborations';
+import Certificates from './pages/Certificates/Certificates';
+import Stacks from './pages/Stacks/Stacks';
+import Projects from './pages/Projects/Projects';
+import Users from './pages/Users/Users';
+import Profile from './pages/Profile/Profile';
+import Languages from './pages/Languages/Languages';
+import AddUserForm from './components/UsersForms/AddUserForm';
 
 const RouterConfig = () => {
   return (
       <Routes>
-        {menuItems.map(({ name, href }) => {
-          const Component = getComponentByName(name);
-          return <Route key={name} path={href} element={<Component />} />;
+        {menuItems.map(({ label, link }) => {
+          const Component = getComponentByLabel(label);
+          return <Route key={label} path={link} element={<Component />} />;
         })}
+        <Route path="/users/add" element={<AddUserForm/>}/>
         <Route path="*" element={<div>Page Not Found</div>} />
       </Routes>
   );
 };
 
-const getComponentByName = (name) => {
-  switch (name) {
+const getComponentByLabel = (label) => {
+  switch (label) {
     case 'Dashboard':
       return Dashboard;
     case 'Collaborations':
@@ -32,7 +35,7 @@ const getComponentByName = (name) => {
     case 'Certificates':
       return Certificates;
     case 'Tech Stacks':
-      return TechStacks;
+      return Stacks;
     case 'Languages':
       return Languages;
     case 'Projects':

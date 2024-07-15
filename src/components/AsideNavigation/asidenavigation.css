@@ -1,6 +1,11 @@
-.aside-title{
+.aside-title {
     @apply text-white
 }
-.aside-title-separator{
+
+.aside-title-separator {
     @apply bg-gray-50
+}
+
+:where(.css-dev-only-do-not-override-m4timi).ant-menu-light.ant-menu-root.ant-menu-inline, :where(.css-dev-only-do-not-override-m4timi).ant-menu-light > .ant-menu.ant-menu-root.ant-menu-inline, :where(.css-dev-only-do-not-override-m4timi).ant-menu-light.ant-menu-root.ant-menu-vertical, :where(.css-dev-only-do-not-override-m4timi).ant-menu-light > .ant-menu.ant-menu-root.ant-menu-vertical {
+    @apply border-0
 }
