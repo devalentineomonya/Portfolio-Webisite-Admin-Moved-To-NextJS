@@ -1,44 +1,54 @@
+// ../../assets/Data/MenuItems.js
+
 import { FaTachometerAlt, FaHandshake, FaCertificate, FaTools, FaLanguage, FaProjectDiagram, FaUsers, FaUser } from 'react-icons/fa';
 
 export const menuItems = [
   {
-    name: "Dashboard",
-    href: "/",
+    key: '1',
     icon: <FaTachometerAlt />,
+    label: 'Dashboard',
+    href: '/',
   },
   {
-    name: "Collaborations",
-    href: "/collaborations",
+    key: '2',
     icon: <FaHandshake />,
+    label: 'Collaborations',
+    href: '/collaborations',
   },
   {
-    name: "Certificates",
-    href: "/certificates",
+    key: '3',
     icon: <FaCertificate />,
+    label: 'Certificates',
+    href: '/certificates',
   },
   {
-    name: "Tech Stacks",
-    href: "/stacks",
+    key: '4',
     icon: <FaTools />,
+    label: 'Tech Stacks',
+    href: '/stacks',
   },
   {
-    name: "Languages",
-    href: "/languages",
+    key: '5',
     icon: <FaLanguage />,
+    label: 'Languages',
+    href: '/languages',
   },
   {
-    name: "Projects",
-    href: "/projects",
+    key: '6',
     icon: <FaProjectDiagram />,
+    label: 'Projects',
+    href: '/projects',
   },
   {
-    name: "Users",
-    href: "/users",
+    key: '7',
     icon: <FaUsers />,
+    label: 'Users',
+    href: '/users',
   },
   {
-    name: "Profile",
-    href: "/profile",
+    key: '8',
     icon: <FaUser />,
+    label: 'Profile',
+    href: '/profile',
   },
 ];

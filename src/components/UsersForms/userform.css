@@ -1,0 +1,6 @@
+.user-form-container{
+    @apply flex justify-center h-full border-none border-t-2 border-gray-200 rounded-none
+}
+.user-form-content{
+    @apply max-w-[500px] w-screen
+}

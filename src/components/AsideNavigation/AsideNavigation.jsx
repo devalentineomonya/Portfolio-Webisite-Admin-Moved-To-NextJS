@@ -1,23 +1,19 @@
 import React from "react";
 import "./asidenavigation.css";
 import { Menu } from "antd";
-import MenuItem from "antd/es/menu/MenuItem";
 import { menuItems } from "../../assets/Data/MenuItems";
 import { Link } from "react-router-dom";
 
 const AsideNavigation = () => {
+  const items = menuItems.map(({ key, icon, label, link }) => ({
+    key,
+    icon,
+    label: <Link to={link}>{label}</Link>,
+  }));
+
   return (
     <div>
-      <Menu>
-        {menuItems?.map(({icon, name, href:link}, i) => (
-          <MenuItem icon={icon} title={name} key={`${i}-${name}`}>
-          <Link to={link} >
-            {name}
-          </Link>
-          </MenuItem>
-        ))}
-
-      </Menu>
+      <Menu items={items} />
     </div>
   );
 };
