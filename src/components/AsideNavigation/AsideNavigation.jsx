@@ -10,7 +10,6 @@ const AsideNavigation = () => {
     icon,
     label: <Link to={link}>{label}</Link>,
   }));
-  console.dir(items);
 
   return (
       <Menu items={items} className="border-2 border-green-400" />

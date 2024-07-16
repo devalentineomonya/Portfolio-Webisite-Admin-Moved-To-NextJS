@@ -21,6 +21,7 @@ const RouterConfig = () => {
           return <Route key={label} path={link} element={<Component />} />;
         })}
         <Route path="/users/add" element={<AddUserForm/>}/>
+        <Route path="/users/edit/:userId" element={<AddUserForm/>}/>
         <Route path="*" element={<div>Page Not Found</div>} />
       </Routes>
   );
