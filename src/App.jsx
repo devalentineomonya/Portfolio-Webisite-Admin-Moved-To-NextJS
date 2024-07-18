@@ -5,7 +5,7 @@ import { Content, Header } from "antd/es/layout/layout";
 import AsideNavigation from "./components/AsideNavigation/AsideNavigation";
 import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
 import RouterConfig from "./route";
-import AddUserForm from "./components/UsersForms/AddUserForm";
+import AddUser from "./components/UsersForms/AddUser";
 function App() {
 
 

@@ -5,7 +5,7 @@ import axios from "axios";
 import UserForm from "./UserForm";
 import { useNavigate } from 'react-router-dom';
 
-const AddUserForm = () => {
+const AddUser = () => {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -89,4 +89,4 @@ const AddUserForm = () => {
   );
 };
 
-export default AddUserForm;
+export default AddUser;

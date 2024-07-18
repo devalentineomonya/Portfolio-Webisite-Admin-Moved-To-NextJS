@@ -11,7 +11,7 @@ import Projects from './pages/Projects/Projects';
 import Users from './pages/Users/Users';
 import Profile from './pages/Profile/Profile';
 import Languages from './pages/Languages/Languages';
-import AddUserForm from './components/UsersForms/AddUserForm';
+import AddUser from './components/UsersForms/AddUser';
 
 const RouterConfig = () => {
   return (
@@ -20,8 +20,8 @@ const RouterConfig = () => {
           const Component = getComponentByLabel(label);
           return <Route key={label} path={link} element={<Component />} />;
         })}
-        <Route path="/users/add" element={<AddUserForm/>}/>
-        <Route path="/users/edit/:userId" element={<AddUserForm/>}/>
+        <Route path="/users/add" element={<AddUser/>}/>
+        <Route path="/users/edit/:userId" element={<AddUser/>}/>
         <Route path="*" element={<div>Page Not Found</div>} />
       </Routes>
   );
